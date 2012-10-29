@@ -520,7 +520,7 @@ $.extend(Countdown.prototype, {
 			var labelsNum = $.countdown._get(inst, 'labels' + whichLabels(inst._periods[period]));
 			return ((!significant && show[period]) || (significant && showSignificant[period]) ?
 				'<span class="countdown_section"><span class="countdown_amount">' +
-				inst._periods[period] + '</span><br/>' +
+				inst._periods[period] + '</span>' +
 				(labelsNum ? labelsNum[period] : labels[period]) + '</span>' : '');
 		};
 		return (layout ? this._buildLayout(inst, show, layout, compact, significant, showSignificant) :
